@@ -26,7 +26,7 @@ from utils import visualization_utils as vis_util
 
 # Name of the directory containing the object detection module we're using
 MODEL_NAME = 'inference_graph_faces'
-VIDEO_NAME = 'silena.mp4'
+VIDEO_NAME = 'video.mp4'
 
 # Grab path to current working directory
 CWD_PATH = os.getcwd()
