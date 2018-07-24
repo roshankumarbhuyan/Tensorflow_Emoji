@@ -179,6 +179,7 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 # Open video file
 video = cv2.VideoCapture(PATH_TO_VIDEO)
 
+k=0
 while(video.isOpened()):
 
     # Acquire frame and expand frame dimensions to have shape: [1, None, None, 3]
@@ -205,6 +206,8 @@ while(video.isOpened()):
     #cv2.imshow('Object detector', frame)
     x = getemo(op, z1)
     cv2.imshow('Object detector', x)
+    cv2.imwrite("gazal/gazal%d.jpg" %k, x)
+    k += 1
     
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):
