@@ -206,7 +206,7 @@ while(video.isOpened()):
     #cv2.imshow('Object detector', frame)
     x = getemo(op, z1)
     cv2.imshow('Object detector', x)
-    cv2.imwrite("gazal/gazal%d.jpg" %k, x)
+    cv2.imwrite("gz/img%d.jpg" %k, x)
     k += 1
     
     # Press 'q' to quit
